@@ -7,7 +7,7 @@ public class ChessboardKnightProbabilityTests
     [InlineData(1, 0, 0, 0, 1)]
     [InlineData(3, 3, 0, 0, 0.01562)]
     [InlineData(8, 30, 6, 4, 0.00019)]
-    public void KnightProbability_WhenCalled_ReturnsExpectedProbability(
+    public void KnightProbability_WhenCalled_ShouldReturnExpectedProbability(
         int n,
         int k,
         int row,
