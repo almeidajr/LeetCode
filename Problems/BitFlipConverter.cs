@@ -7,6 +7,13 @@ public static class BitFlipConverter
     public static int MinBitFlips(int start, int goal)
     {
         var flip = start ^ goal;
-        return Convert.ToString(flip, 2).Count(c => c == '1');
+        var count = 0;
+        while (flip != 0)
+        {
+            flip &= flip - 1;
+            count++;
+        }
+
+        return count;
     }
 }
